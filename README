@@ -1,0 +1,103 @@
+epdfview
+------------------------------------------
+ePDFView is a free lightweight PDF document viewer using Poppler and 
+GTK+ libraries. The aim of ePDFView is to make a simple PDF document 
+viewer, in the lines of Evince but without using the Gnome libraries.
+
+Runtime requirements:
+  cygwin-1.7.0-56
+  libgcc1-4.3.2-2
+  libgdk_pixbuf2.0_0-2.16.5-1
+  libglib2.0_0-2.20.4-1
+  libgtk2.0_0-2.16.5-1
+  libintl8-0.17-11
+  libpango1.0_0-1.24.5-1
+  libpoppler-glib_4-0.10.7-1
+  libstdc++6-4.3.2-2
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.63-10
+  automake1.10-1.10.2-10
+  binutils-2.19.51-1
+  cygport-0.9.8-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  gettext-devel-0.17-11
+  make-3.81-2
+  pkg-config-0.23b-10
+  sed-4.1.5-2
+
+Canonical website:
+  http://trac.emma-soft.com/epdfview/
+
+Canonical download:
+  http://trac.emma-soft.com/epdfview/wiki/Download
+
+-------------------------------------------
+
+Build instructions:
+  unpack epdfview-0.1.7-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./epdfview-0.1.7-X.cygport all
+
+This will create:
+  /usr/src/epdfview-0.1.7-X-src.tar.bz2
+  /usr/src/epdfview-0.1.7-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/epdfview.sh
+  /usr/bin/epdfview.exe
+  /usr/share/applications/epdfview.desktop
+  /usr/share/doc/epdfview/AUTHORS
+  /usr/share/doc/epdfview/COPYING
+  /usr/share/doc/epdfview/NEWS
+  /usr/share/doc/epdfview/README
+  /usr/share/doc/epdfview/THANKS
+  /usr/share/epdfview/pixmaps/icon_epdfview-24.png
+  /usr/share/epdfview/pixmaps/icon_epdfview-32.png
+  /usr/share/epdfview/pixmaps/icon_epdfview-48.png
+  /usr/share/epdfview/pixmaps/stock_find_next_24.png
+  /usr/share/epdfview/pixmaps/stock_find_previous_24.png
+  /usr/share/epdfview/pixmaps/stock_rotate-270.png
+  /usr/share/epdfview/pixmaps/stock_rotate-90.png
+  /usr/share/epdfview/pixmaps/stock_zoom-page-width.png
+  /usr/share/epdfview/ui/epdfview-ui-print.xml
+  /usr/share/epdfview/ui/epdfview-ui.xml
+  /usr/share/icons/hicolor/24x24/apps/epdfview.png
+  /usr/share/icons/hicolor/32x32/apps/epdfview.png
+  /usr/share/icons/hicolor/48x48/apps/epdfview.png
+  /usr/share/locale/ca/LC_MESSAGES/epdfview.mo
+  /usr/share/locale/cs/LC_MESSAGES/epdfview.mo
+  /usr/share/locale/de/LC_MESSAGES/epdfview.mo
+  /usr/share/locale/el/LC_MESSAGES/epdfview.mo
+  /usr/share/locale/es/LC_MESSAGES/epdfview.mo
+  /usr/share/locale/eu/LC_MESSAGES/epdfview.mo
+  /usr/share/locale/fr/LC_MESSAGES/epdfview.mo
+  /usr/share/locale/it/LC_MESSAGES/epdfview.mo
+  /usr/share/locale/ja/LC_MESSAGES/epdfview.mo
+  /usr/share/locale/pl/LC_MESSAGES/epdfview.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/epdfview.mo
+  /usr/share/locale/pt_PT/LC_MESSAGES/epdfview.mo
+  /usr/share/locale/ru/LC_MESSAGES/epdfview.mo
+  /usr/share/locale/sv/LC_MESSAGES/epdfview.mo
+  /usr/share/locale/vi/LC_MESSAGES/epdfview.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/epdfview.mo
+  /usr/share/locale/zh_TW/LC_MESSAGES/epdfview.mo
+
+------------------
+
+Port Notes:
+
+----- version 0.1.7-1 -----
+Initial release for Cygwin 1.7.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

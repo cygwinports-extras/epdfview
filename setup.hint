@@ -1,5 +1,5 @@
 category: Graphics Text
-requires: libgcc1 libgdk_pixbuf2.0_0 libglib2.0_0 libgtk2.0_0 libintl8 libpango1.0_0 libpoppler-glib5 libstdc++6
+requires: libgcc1 libgdk_pixbuf2.0_0 libglib2.0_0 libgtk2.0_0 libintl8 libpango1.0_0 libpoppler-glib6 libstdc++6
 sdesc: "GTK+ PDF viewer"
 ldesc: "ePDFView is a free lightweight PDF document viewer using Poppler 
 and GTK+ libraries. The aim of ePDFView is to make a simple PDF document 

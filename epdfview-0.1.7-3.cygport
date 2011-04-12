@@ -1,8 +1,13 @@
 DESCRIPTION="GTK+ PDF viewer"
 HOMEPAGE="http://trac.emma-soft.com/epdfview/"
 SRC_URI="http://trac.emma-soft.com/epdfview/chrome/site/releases/${P}.tar.bz2"
-PATCH_URI="mirror://portage/app-text/${PN}/files/${P}-mouse-scrolling.patch
-           0.1.7-as-needed.patch"
+
+PATCH_URI="
+	mirror://portage/app-text/${PN}/files/${P}-mouse-scrolling.patch
+	mirror://portage/app-text/${PN}/files/${P}-poppler-changeset_r354.patch
+	mirror://portage/app-text/${PN}/files/${P}-poppler-changeset_r357.patch
+	0.1.7-as-needed.patch
+"
 
 src_install() {
 	cd ${B}

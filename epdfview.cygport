@@ -1,0 +1,23 @@
+NAME="epdfview"
+VERSION=0.1.8
+RELEASE=2
+CATEGORY="Graphics"
+SUMMARY="GTK+ PDF viewer"
+DESCRIPTION="ePDFView is a free lightweight PDF document viewer using Poppler
+and GTK+ libraries. The aim of ePDFView is to make a simple PDF document
+viewer, in the lines of Evince but without using the Gnome libraries."
+HOMEPAGE="http://trac.emma-soft.com/epdfview/"
+SRC_URI="http://trac.emma-soft.com/epdfview/chrome/site/releases/${NAME}-${VERSION}.tar.bz2"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	for i in 24 32 48
+	do
+		insinto /usr/share/icons/hicolor/${i}x${i}/apps
+		newins ${S}/data/icon_epdfview-${i}.png epdfview.png
+	done
+
+	sed -i -e 's|\(Icon=\).*|\1epdfview|' ${D}/usr/share/applications/epdfview.desktop
+}
